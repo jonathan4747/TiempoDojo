@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Island+Moments&display=swap" rel="stylesheet">
+    <link href="./css/styles.css" rel="stylesheet"/>
+</head>
+<body>
+    <div>
+        <div class="barra">
+            <div class="titulo">
+                <h1>DojoWeather</h1>
+            </div>
+            <div class="menu">
+                <div onclick="cambioCiudad(this)">Burbank</div>
+                <div onclick="cambioCiudad(this)">Chicago</div>
+                <div onclick="cambioCiudad(this)">Dallas</div>          
+            </div>
+        </div>
+        <div class="barra2">
+            <div class="sj">
+                <h1>San Jose</h1>
+            </div>
+            <div class="temp">
+                show temperature in
+                <select>
+                    <option value="C">
+                        °C 
+                    </option>
+                    <option value="F" onclick ="temperatura(this)">
+                        °F
+                    </option>
+                </select> 
+            </div>
+        </div>
+        <div class="cuerpo">
+            <div class="cuadro1">
+                <div class="t1">
+                    Today
+                </div>
+                <div class="t2">
+                    <img src="./imagenes/some_rain.png" alt="lluvia" class="frio">
+                </div>
+                <div class="t3">
+                    Some rain
+                </div>
+                <div class="t4">
+                    <div class="tmp1" >
+                        24 
+                    </div><span class="r">°</span>
+                    <div class="tmp2">
+                        18
+                    </div><span class="a">°</span>
+                </div>
+            </div>
+            <div class="cuadro1">
+                <div class="t1">
+                    Tomorrow
+                </div>
+                <div class="t2">
+                    <img src="./imagenes/some_sun.png" alt="sol" class="calor">
+                </div>
+                <div class="t3">
+                    Some sun
+                </div>
+                <div class="t4">
+                    <div class="tmp3">
+                        27
+                    </div><span class="r">°</span>
+                    <div class="tmp4">
+                        19
+                    </div><span class="a">°</span>
+                </div>
+            </div>
+            <div class="cuadro1">
+                <div class="t1">
+                    Friday
+                </div>
+                <div class="t2">
+                    <img src="./imagenes/some_clouds.png" alt="nublado" class="tibio">
+                </div>
+                <div class="t3">
+                    Some clouds
+                </div>
+                <div class="t4">
+                    <div class="tmp5">
+                         21
+                    </div><span class="r">°</span>
+                    <div class="tmp6">
+                        16
+                    </div><span class="a">°</span>
+                </div>
+            </div>
+            <div class="cuadro1">
+                <div class="t1">
+                    Saturday
+                </div>
+                <div class="t2">
+                    <img src="./imagenes/some_sun.png" alt="sol" class="calor">
+                </div>
+                <div class="t3">
+                    Some sun
+                </div>
+                <div class="t4">
+                    <div class="tmp7">
+                         26
+                    </div><span class="r">°</span>
+                    <div class="tmp8">
+                        11
+                    </div><span class="a">°</span>
+                </div>
+            </div>
+            
+        </div>
+        <div class="spam">
+            <div class="imagen">
+                <img src="./imagenes/cookie.png" alt="span" class="cokkie" >
+            </div>
+            <div class="parrafo">
+                <h2>Stop! Cokkie time</h2>
+                <p>We use cookies(sadly not the edible ones) to personalize content and ads, 
+                    to provide social media features and to analyseour traffic. <a href="#"> Read more ...</a>
+                </p>
+            </div>
+            <div class="buton">
+                <button class="click" onclick="eliminarCokkie(this)">
+                    I accept
+                </button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
